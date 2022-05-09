@@ -456,9 +456,29 @@
         </button>
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
         <form>
-          <input type="text" class="modal-imput" name="user-name" />
-          <input type="text" class="modal-imput" name="user-phone" />
-          <input type="text" class="modal-imput" name="user-email" />
+          <div class="modal-fill">
+            <label class="modal-label" for="user-name">Имя</label>
+            <input
+              type="text"
+              class="modal-imput"
+              name="user-name"
+              required
+              minlength="2"
+              id="user-name"
+            />
+          </div>
+          <div class="modal-fill">
+            <label class="modal-label" for="user-phone">Телефон</label>
+            <input type="tel" class="modal-imput" name="user-phone" required id="user-phone" />
+          </div>
+          <div class="modal-fill">
+            <label class="modal-label" for="user-email">Почта</label>
+            <input type="email" class="modal-imput" name="user-email" id="user-email" />
+          </div>
+          <div class="modal-fill">
+            <label class="modal-label" for="user-comment">Комментарий</label>
+            <textarea name="" id="user-comment" placeholder="Введите текст"></textarea>
+          </div>
           <button type="submit">Отправить</button>
         </form>
       </div>
