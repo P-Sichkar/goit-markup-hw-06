@@ -550,7 +550,8 @@ img {
   margin-left: 70px;
 }
 
-.footer-soc-title {
+.footer-soc-title,
+.subscription-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -588,6 +589,10 @@ img {
 .footer-soc-link:focus {
   background-color: var(--icon-main-focus-background-color);
   fill: var(--icon-main-focus-color);
+}
+
+.subscription {
+  margin-left: 93px;
 }
 
 /* --------------------------Filter-PORTFOLIO-------------------------- */
@@ -749,13 +754,18 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   align-items: center;
   text-align: center;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* 
+
+.modal-close-btn:hover {
+  fill: #188ce8;
+}
+
 .is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
-} */
+}
 
 .modal-title {
   font-weight: 700;
@@ -765,11 +775,7 @@ img {
   letter-spacing: 0.03em;
   color: #212121;
 
-  margin-bottom: 30px;
-}
-
-.modal-fill {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .modal-input {
@@ -800,6 +806,7 @@ img {
 
 .modal-input-wrap {
   position: relative;
+  margin-bottom: 10px;
 }
 
 .modal-input-icon {
@@ -849,11 +856,51 @@ img {
   color: rgba(117, 117, 117, 0.5);
 }
 
+.modal-checkbox-icon {
+  cursor: pointer;
+  width: 16px;
+  height: 15px;
+  margin-right: 8.38px;
+  margin-left: 12px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    filter 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.check-icon {
+  fill: transparent;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input-check:checked + .modal-check-text .modal-checkbox-icon {
+  background-color: #2196f3;
+  border-color: #2196f3;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+    drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.modal-input-check:hover + .modal-check-text .modal-checkbox-icon,
+.modal-input-check:focus + .modal-check-text .modal-checkbox-icon {
+  border-color: #2196f3;
+}
+
+.modal-input-check:checked + .modal-check-text .check-icon {
+  fill: #ffffff;
+}
+
 .modal-check-text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 .link-policy {
@@ -881,4 +928,15 @@ img {
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: #ffffff;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-submit-btn:hover,
+.modal-submit-btn:focus {
+  background: #188ce8;
+}
+.modal-submit-btn:active {
+  background: #ececec;
+  color: #188ce8;
 }

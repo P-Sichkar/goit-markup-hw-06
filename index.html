@@ -444,9 +444,15 @@
               </li>
             </ul>
           </div>
+          <div class="subscription">
+            <h2 class="subscription-title">Подпишитесь на рассылку</h2>
+          </div>
         </div>
       </section>
     </footer>
+
+    <!-- Modal -->
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close-btn" type="button" data-modal-close>
@@ -500,11 +506,16 @@
             ></textarea>
           </div>
           <div class="modal-fill">
-            <input type="checkbox" class="modal-input-check" id="modal-input-check"
+            <input type="checkbox" class="modal-input-check visually-hidden" id="modal-input-check"
             name=modal-policy-check" value="modal-policy" />
-            <label for="modal-input-check" class="modal-check-text"
-              >Соглашаюсь с рассылкой и принимаю<span class="link-check-text">
-                <a class="link-policy" href="">Условия договора</a></span
+            <label for="modal-input-check" class="modal-check-text">
+              <span class="modal-checkbox-icon">
+                <svg class="check-icon" width="11" height="8">
+                  <use href="./images/icon.svg#icon-check"></use>
+                </svg>
+              </span>
+              Соглашаюсь с рассылкой и принимаю&nbsp;<span class="link-check-text">
+                <a class="link-policy" href=""> Условия договора</a></span
               ></label
             >
           </div>
