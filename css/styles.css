@@ -597,7 +597,7 @@ img {
 .subscription-wrap {
   display: flex;
 
-  /* margin-top: 20px; */
+  margin-top: 20px;
 }
 
 .subscription-label {
