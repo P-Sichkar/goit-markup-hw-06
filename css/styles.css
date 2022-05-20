@@ -550,8 +550,7 @@ img {
   margin-left: 70px;
 }
 
-.footer-soc-title,
-.subscription-title {
+.footer-soc-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -597,6 +596,18 @@ img {
 
 .subscription-wrap {
   display: flex;
+  /* margin-top: 20px; */
+}
+
+.subscription-label {
+  display: flex;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
 }
 
 .subscription-input {
