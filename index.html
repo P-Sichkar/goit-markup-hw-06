@@ -446,6 +446,24 @@
           </div>
           <div class="subscription">
             <h2 class="subscription-title">Подпишитесь на рассылку</h2>
+            <form>
+              <!-- <label class="subscription-label" for="subscription-user-email">E-mail</label> -->
+              <div class="subscription-wrap">
+                <input
+                  class="subscription-input"
+                  type="email"
+                  name="subscription-user-email"
+                  id="subscription-user-email"
+                  placeholder="E-mail"
+                />
+                <button class="subscription-btn" type="submit">
+                  Подписаться
+                  <svg class="subscription-btn-icon" width="20" height="20">
+                    <use href="./images/icon.svg#icon-send"></use>
+                  </svg>
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </section>
